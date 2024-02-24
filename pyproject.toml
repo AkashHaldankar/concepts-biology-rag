@@ -9,10 +9,20 @@ packages = [
 ]
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = ">=3.11,<3.12"
 uvicorn = "^0.23.2"
 langserve = {extras = ["server"], version = ">=0.0.30"}
 pydantic = "<2"
+langchain-cli = "^0.0.21"
+tqdm = "^4.66.2"
+unstructured = {extras = ["all-docs"], version = "^0.12.4"}
+langchain-openai = "^0.0.7"
+langchain-experimental = "^0.0.52"
+python-dotenv = "^1.0.1"
+openai = "^1.12.0"
+tiktoken = "^0.6.0"
+psycopg = "^3.1.18"
+pgvector = "^0.2.5"
 
 
 [tool.poetry.group.dev.dependencies]
